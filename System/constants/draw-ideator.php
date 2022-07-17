@@ -2,7 +2,7 @@
 <div class="login-box-wrapper">
 							
 <div class="modal-header">
-<h4 class="modal-title text-center">Create your account for free</h4>
+<h4 class="modal-title text-center">Create your account</h4>
 </div>
 
 <div class="modal-body">
@@ -25,8 +25,8 @@
 <div class="col-sm-12 col-md-12">
 
 <div class="form-group"> 
-<label>Company</label>
-<input class="form-control" placeholder="Enter your company name" name="type" required type="text"> 
+<label>Profession</label>
+<input class="form-control" placeholder="Enter your Profession" name="type" required type="text"> 
 </div>
 												
 </div>
