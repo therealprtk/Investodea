@@ -35,11 +35,9 @@ $mypass = md5($_POST['password']);
 	$_SESSION['mymonth'] = $row['bmonth'];
 	$_SESSION['myyear'] = $row['byear'];
     $_SESSION['myphone'] = $row['phone'];
-	$_SESSION['myedu'] = $row['education'];
+
 	$_SESSION['mytitle'] = $row['title'];
-	$_SESSION['mycity'] = $row['city'];
-	$_SESSION['mystreet'] = $row['street'];
-	$_SESSION['myzip'] = $row['zip'];
+	
     $_SESSION['mystate'] = $row['state'];
     $_SESSION['mydesc'] = $row['about'];
 
@@ -59,17 +57,14 @@ $mypass = md5($_POST['password']);
     $_SESSION['myemail'] = $row['email'];
     $_SESSION['myphone'] = $row['phone'];
 	$_SESSION['comptype'] = $row['title'];
-	$_SESSION['mycity'] = $row['city'];
-	$_SESSION['mystreet'] = $row['street'];
-	$_SESSION['myzip'] = $row['zip'];
+	
     $_SESSION['mystate'] = $row['state'];
     $_SESSION['mydesc'] = $row['about'];
 	$_SESSION['avatar'] = $row['avatar'];
-	$_SESSION['myserv'] = $row['services'];
-	$_SESSION['myexp'] = $row['expertise'];
+	
 	$_SESSION['lastlogin'] = $row['last_login'];
 	$_SESSION['website'] = $row['website'];
-	$_SESSION['people'] = $row['people'];
+	
 	$_SESSION['role'] = $role;
 	
 		

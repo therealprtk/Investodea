@@ -34,16 +34,12 @@ $company_id = $_GET['ref'];
     $compmail  = $row['email'];
 	$comptype = $row['title'];
     $compphone = $row['phone'];
-	$compcity = $row['city'];
-	$compstreet = $row['street'];
-	$compzip = $row['zip'];
+
     $compstate = $row['state'];
     $compbout = $row['about'];
 	$complogo = $row['avatar'];
-	$compserv = $row['services'];
-	$compexp = $row['expertise'];
 	$compweb = $row['website'];
-	$comppeopl = $row['people'];
+
 	
 	}
 	
@@ -322,14 +318,7 @@ $page = 1;
 																<span>state:</span>
 																<?php echo $row['state']; ?>
 															</li>
-															<li>
-																<span>City:</span>
-																<?php echo $row['city']; ?>
-															</li>
-															<li>
-																<span>Experience:</span>
-																<?php echo $row['experience']; ?>
-															</li>
+															
 															<li>
 																<span>Deadline: </span>
 																<?php echo "$post_month"; ?> <?php echo "$post_date"; ?>, <?php echo "$post_year"; ?>

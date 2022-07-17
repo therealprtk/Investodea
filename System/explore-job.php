@@ -26,14 +26,13 @@ try {
     foreach($result as $row)
     {
 	$jobtitle = $row['title'];
-	$jobcity = $row['city'];
+	
 	$jobstate = $row['state'];
 	$jobcategory = $row['category'];
 	$jobtype = $row['type'];
-	$experience = $row['experience'];
+	
 	$jobdescription = $row['description'];
-	$jobrespo = $row['responsibility'];
-	$jobreq = $row['requirements'];
+	
 	$closingdate = $row['closing_date'];
 	$opendate = $row['date_posted'];
 	$compid = $row['company'];
