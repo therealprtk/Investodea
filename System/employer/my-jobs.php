@@ -255,7 +255,7 @@ $page = 1;
 																
 											<?php 
 										    if ($logo == null) {
-										     print '<center>Company Logo Here</center>';
+										     print '<center>Image</center>';
 										    }else{
 										    echo '<center><img alt="image" title="'.$compname.'" width="180" height="100" src="data:image/jpeg;base64,'.base64_encode($logo).'"/></center>';	
 										     }

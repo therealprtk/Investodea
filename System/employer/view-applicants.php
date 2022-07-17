@@ -177,18 +177,6 @@ $job_title = $row['title'];
 
 		<div class="main-wrapper">
 
-			<div class="breadcrumb-wrapper">
-			
-				<div class="container">
-				
-					<ol class="breadcrumb-list booking-step">
-						<li><a href="./">Home</a></li>
-						<li><span>Applicants for <?php echo "$job_title"; ?></</span></li>
-					</ol>
-					
-				</div>
-				
-			</div>
 			
 			<div class="section sm">
 			
