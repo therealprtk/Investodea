@@ -36,14 +36,9 @@ if ($rec == "0") {
 foreach($result as $row)
 {
     $jobtitle = $row['title'];
-	$jobcity = $row['city'];
 	$jobstate = $row['state'];
 	$jobcategory = $row['category'];
 	$jobtype = $row['type'];
-	$experience = $row['experience'];
-	$jobdescription = $row['description'];
-	$jobrespo = $row['responsibility'];
-	$jobreq = $row['requirements'];
 	$closingdate = $row['closing_date'];		
 }
 
@@ -199,7 +194,7 @@ foreach($result as $row)
 									
 									<h2 class="heading mb-15"><h4><?php echo "$compname"; ?></h4>
 								
-									<p class="location"><i class="fa fa-map-marker"></i> <?php echo "$zip"; ?> <?php echo "$city"; ?>. <?php echo "$street"; ?>, <?php echo "$state"; ?> <span class="block"> <i class="fa fa-phone"></i> <?php echo "$myphone"; ?></span></p>
+									<p class="location"><i class="fa fa-map-marker"></i> <?php echo "$state"; ?> <span class="block"> <i class="fa fa-phone"></i> <?php echo "$myphone"; ?></span></p>
 									
 									<ul class="meta-list clearfix">
 										<li>
