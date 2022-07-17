@@ -23,7 +23,7 @@ $myemail = $_POST['email'];
     $rec = count($result);
 	
 	if ($rec == "0") {
-    $stmt = $conn->prepare("UPDATE users SET first_name = :compname, byear = :esta, title = :type, city = :city, street = :street, zip = :zip, state = :state, phone = :phone, about = :about, services = :service, expertise = :expertise, people = :people, website = :website WHERE member_no='$myid'");
+    $stmt = $conn->prepare("UPDATE users SET first_name = :compname, byear = :esta, title = :type, state = :state, phone = :phone, about = :about, website = :website WHERE member_no='$myid'");
     $stmt->bindParam(':compname', $companame);
     $stmt->bindParam(':esta', $esta);
 	$stmt->bindParam(':type', $type);
