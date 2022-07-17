@@ -29,15 +29,15 @@ header("location:../");
 
 if (isset($_GET['jobid'])) {
 require'../constants/db_config.php';
-$job_id = $_GET['jobid'];
+$idea_id = $_GET['jobid'];
 
 try {
 $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 	
-$stmt = $conn->prepare("SELECT * FROM ideas WHERE job_id = :jobid AND company = '$myid'");
-$stmt->bindParam(':jobid', $job_id);
+$stmt = $conn->prepare("SELECT * FROM ideas WHERE idea_id = :jobid AND company = '$myid'");
+$stmt->bindParam(':jobid', $idea_id);
 $stmt->execute();
 $result = $stmt->fetchAll();
 $rec = count($result);
@@ -198,8 +198,8 @@ $job_title = $row['title'];
 							<div class="GridLex-grid-noGutter-equalHeight">
 							<?php
 							include '../constants/db_config.php';
-							$stmt = $conn->prepare("SELECT * FROM tbl_job_applications WHERE job_id = :jobid ORDER BY id LIMIT $page1,16");
-							$stmt->bindParam(':jobid', $job_id);
+							$stmt = $conn->prepare("SELECT * FROM tbl_job_applications WHERE idea_id = :jobid ORDER BY id LIMIT $page1,16");
+							$stmt->bindParam(':jobid', $idea_id);
                             $stmt->execute();
                             $result = $stmt->fetchAll();
 							 foreach($result as $row)
@@ -303,8 +303,8 @@ $job_title = $row['title'];
 						            <ul class="pager-list">
 								<?php
 								$total_records = 0;
-								$stmt = $conn->prepare("SELECT * FROM tbl_job_applications WHERE job_id = :jobid ORDER BY id");
-								$stmt->bindParam(':jobid', $job_id);
+								$stmt = $conn->prepare("SELECT * FROM tbl_job_applications WHERE idea_id = :jobid ORDER BY id");
+								$stmt->bindParam(':jobid', $idea_id);
                                 $stmt->execute();
                                 $result = $stmt->fetchAll();
 								    foreach($result as $row)
@@ -319,13 +319,13 @@ $job_title = $row['title'];
 								$prevpage = $page - 1;
 								$nextpage = $page + 1;
 								
-								print '<li class="paging-nav" '; if ($page == "1") { print 'class="disabled"'; } print '><a '; if ($page == "1") { print ''; } else { print 'href="view-applicants.php?jobid='.$job_id.'&page='.$prevpage.'"';} print '><i class="fa fa-chevron-left"></i></a></li>';
+								print '<li class="paging-nav" '; if ($page == "1") { print 'class="disabled"'; } print '><a '; if ($page == "1") { print ''; } else { print 'href="view-applicants.php?jobid='.$idea_id.'&page='.$prevpage.'"';} print '><i class="fa fa-chevron-left"></i></a></li>';
 					            for ($b=1;$b<=$records;$b++)
                                  {
                                  
-		                        ?><li  class="paging-nav" ><a <?php if ($b == $page) { print ' style="background-color:#33B6CB; color:white" '; } ?>  href="view-applicants.php?jobid=<?php echo "$job_id"; ?>&page=<?php echo "$b"; ?>"><?php echo $b." "; ?></a></li><?php
+		                        ?><li  class="paging-nav" ><a <?php if ($b == $page) { print ' style="background-color:#33B6CB; color:white" '; } ?>  href="view-applicants.php?jobid=<?php echo "$idea_id"; ?>&page=<?php echo "$b"; ?>"><?php echo $b." "; ?></a></li><?php
                                  }	
-								 print '<li class="paging-nav"'; if ($page == $records) { print 'class="disabled"'; } print '><a '; if ($page == $records) { print ''; } else { print 'href="view-applicants.php?jobid='.$job_id.'&page='.$nextpage.'"';} print '><i class="fa fa-chevron-right"></i></a></li>';
+								 print '<li class="paging-nav"'; if ($page == $records) { print 'class="disabled"'; } print '><a '; if ($page == $records) { print ''; } else { print 'href="view-applicants.php?jobid='.$idea_id.'&page='.$nextpage.'"';} print '><i class="fa fa-chevron-right"></i></a></li>';
 					             }
 
 								

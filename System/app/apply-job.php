@@ -17,7 +17,7 @@ include '../constants/db_config.php';
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 	
-    $stmt = $conn->prepare("SELECT * FROM tbl_job_applications WHERE member_no = '$myid' AND job_id = :jobid");
+    $stmt = $conn->prepare("SELECT * FROM tbl_job_applications WHERE member_no = '$myid' AND idea_id = :jobid");
 	$stmt->bindParam(':jobid', $opt);
     $stmt->execute();
     $result = $stmt->fetchAll();
@@ -30,7 +30,7 @@ include '../constants/db_config.php';
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 	
-    $stmt = $conn->prepare("INSERT INTO tbl_job_applications (member_no, job_id, application_date)
+    $stmt = $conn->prepare("INSERT INTO tbl_job_applications (member_no, idea_id, application_date)
     VALUES (:memberno, :jobid, :appdate)");
     $stmt->bindParam(':memberno', $myid);
     $stmt->bindParam(':jobid', $opt);

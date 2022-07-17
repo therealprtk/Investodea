@@ -304,7 +304,7 @@ $title = "Ideas";
 													</div>
 													
 													<div class="col-sm-5 col-md-4">
-														<a target="_blank" href="explore-job.php?jobid=<?php echo $row['job_id']; ?>" class="btn btn-primary">View This Idea</a>
+														<a target="_blank" href="explore-job.php?jobid=<?php echo $row['idea_id']; ?>" class="btn btn-primary">View This Idea</a>
 													</div>
 													
 												</div>

@@ -14,7 +14,7 @@ try {
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 	
-    $stmt = $conn->prepare("SELECT * FROM ideas WHERE job_id = :jobid");
+    $stmt = $conn->prepare("SELECT * FROM ideas WHERE idea_id = :jobid");
 	$stmt->bindParam(':jobid', $jobid);
     $stmt->execute();
     $result = $stmt->fetchAll();
@@ -393,7 +393,7 @@ $jobexpired = false;
 							try {
                             $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                            $stmt = $conn->prepare("SELECT * FROM ideas WHERE company = '$compid' AND job_id != :jobid ORDER BY rand() LIMIT 5");
+                            $stmt = $conn->prepare("SELECT * FROM ideas WHERE company = '$compid' AND idea_id != :jobid ORDER BY rand() LIMIT 5");
 							$stmt->bindParam(':jobid', $jobid);
                             $stmt->execute();
                             $result = $stmt->fetchAll();
@@ -426,7 +426,7 @@ $jobexpired = false;
 	                        }
 							
 							?>
-							<a href="explore-job.php?jobid=<?php echo $row['job_id']; ?>" class="recent-job-item clearfix">
+							<a href="explore-job.php?jobid=<?php echo $row['idea_id']; ?>" class="recent-job-item clearfix">
 														<div class="GridLex-grid-middle">
 															<div class="GridLex-col-6_sm-12_xs-12">
 																<div class="job-position">

@@ -306,7 +306,7 @@ include 'constants/check-login.php';
 							
 							
 							?>
-							<a class="recent-job-item clearfix" target="_blank" href="explore-job.php?jobid=<?php echo $row['job_id']; ?>">
+							<a class="recent-job-item clearfix" target="_blank" href="explore-job.php?jobid=<?php echo $row['idea_id']; ?>">
 							<div class="GridLex-grid-middle">
 							<div class="GridLex-col-5_xs-12">
 							<div class="job-position">

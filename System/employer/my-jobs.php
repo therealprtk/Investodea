@@ -247,7 +247,7 @@ $page = 1;
 											<?php echo "$sta"; ?>
 											</div>
 														
-											<a target="_blank" href="../explore-job.php?jobid=<?php echo $row['job_id']; ?>">
+											<a target="_blank" href="../explore-job.php?jobid=<?php echo $row['idea_id']; ?>">
 														
 											<div class="image">
 															
@@ -275,7 +275,7 @@ $page = 1;
 														
 											<div class="content-bottom">
 											<div class="sub-category">
-											<a target="_blank" href="view-applicants.php?jobid=<?php echo $row['job_id']; ?>">Applicants</a>
+											<a target="_blank" href="view-applicants.php?jobid=<?php echo $row['idea_id']; ?>">Applicants</a>
 											
 											</div>
 											</div>

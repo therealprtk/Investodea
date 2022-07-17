@@ -230,9 +230,9 @@ $page = 1;
 									$post_date = date_format(date_create_from_format('m/d/Y', $row['application_date']), 'd');
                                     $post_month = date_format(date_create_from_format('m/d/Y', $row['application_date']), 'F');
                                     $post_year = date_format(date_create_from_format('m/d/Y', $row['application_date']), 'Y');
-								    $job_id = $row['job_id'];
+								    $idea_id = $row['idea_id'];
 								
-								    $stmtb = $conn->prepare("SELECT * FROM ideas WHERE job_id = '$job_id'");
+								    $stmtb = $conn->prepare("SELECT * FROM ideas WHERE idea_id = '$idea_id'");
                                     $stmtb->execute();
                                     $resultb = $stmtb->fetchAll();
 									foreach($resultb as $rowb)
@@ -271,7 +271,7 @@ $page = 1;
 									}
 									
 									?>
-																	   <a target="_blank" href="../explore-job.php?jobid=<?php echo "$job_id"; ?>" class="recent-job-item clearfix">
+																	   <a target="_blank" href="../explore-job.php?jobid=<?php echo "$idea_id"; ?>" class="recent-job-item clearfix">
 								<div class="GridLex-grid-middle">
 									<div class="GridLex-col-6_xs-12">
 										<div class="job-position">

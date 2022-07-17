@@ -144,7 +144,7 @@ INSERT INTO `states` (`id`, `state_name`) VALUES
 --
 
 CREATE TABLE `ideas` (
-  `job_id` varchar(255) NOT NULL,
+  `idea_id` varchar(255) NOT NULL,
   `title` varchar(255) NOT NULL,
   `state` varchar(255) NOT NULL,
   `category` varchar(255) NOT NULL,
@@ -160,7 +160,7 @@ CREATE TABLE `ideas` (
 -- Dumping data for table `ideas`
 --
 
-INSERT INTO `ideas` (`job_id`, `title`, `state`, `category`, `type`, `description`,`company`, `date_posted`, `closing_date`, `enc_id`) VALUES
+INSERT INTO `ideas` (`idea_id`, `title`, `state`, `category`, `type`, `description`,`company`, `date_posted`, `closing_date`, `enc_id`) VALUES
 ('5609558107', 'Technical Engineer', 'Ghana', 'IT and Telecoms', 'Long Term Investment', 'This is a complete system that has both android version and the desktop version. It also manages sales and can be used manage attendance as well.<br>', 'CM858235891', 'August 06, 2021', '01/09/2021', 11);
 
 -- --------------------------------------------------------
@@ -172,7 +172,7 @@ INSERT INTO `ideas` (`job_id`, `title`, `state`, `category`, `type`, `descriptio
 CREATE TABLE `tbl_job_applications` (
   `id` int(255) NOT NULL,
   `member_no` varchar(255) NOT NULL,
-  `job_id` varchar(255) NOT NULL,
+  `idea_id` varchar(255) NOT NULL,
   `application_date` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -244,7 +244,7 @@ ALTER TABLE `states`
 --
 ALTER TABLE `ideas`
   ADD PRIMARY KEY (`enc_id`),
-  ADD UNIQUE KEY `job_id` (`job_id`);
+  ADD UNIQUE KEY `idea_id` (`idea_id`);
 
 --
 -- Indexes for table `tbl_job_applications`
