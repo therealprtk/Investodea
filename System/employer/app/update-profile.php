@@ -3,11 +3,8 @@ require '../../constants/db_config.php';
 require '../constants/check-login.php';
 
 $companame = ucwords($_POST['company']);
-$esta = $_POST['year'];
 $type = ucwords($_POST['type']);
-$people = $_POST['people'];
 $web = $_POST['web'];
-
 $phone = $_POST['phone'];
 $state = $_POST['state'];
 $about = $_POST['background'];
