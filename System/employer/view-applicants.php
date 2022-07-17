@@ -79,7 +79,7 @@ $job_title = $row['title'];
     <meta property="og:image:alt" content="Bwire Jobs" />
     <meta property="og:description" content="Online Job Management / Job Portal" />
 
-	<link rel="shortcut icon" href="../images/ico/favicon.png">
+	<link rel="shortcut icon" href="../images/ico/logoinv.png">
 	
 	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css" media="screen">	
 	<link href="../css/animate.css" rel="stylesheet">
@@ -123,7 +123,7 @@ $job_title = $row['title'];
 					
 					<div class="logo-wrapper">
 						<div class="logo">
-							<a href="./"><img src="../images/logo.png" alt="Logo" /></a>
+							<a href="./"><img src="../images/inv.png" alt="Logo" /></a>
 						</div>
 					</div>
 					
@@ -276,7 +276,7 @@ $job_title = $row['title'];
 												<h4><?php echo $rowb['first_name'] ?> <?php echo $rowb['last_name'] ?></h4>
 												<p class="location"><i class="fa fa-map-marker"></i> <?php echo $rowb['state'] ?></p>
 												
-												<h6 class="text-primary">Education : <?php echo $rowb['education'] ?></h6>
+												
 												
                                                 <h6 class="text-primary"><?php echo $rowb['title'] ?></h6>
 												<?php echo "$post_month"; ?> <?php echo "$post_date"; ?>, <?php echo "$post_year"; ?>
