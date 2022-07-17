@@ -129,32 +129,32 @@ $job_title = $row['title'];
 					
 					<div id="navbar" class="navbar-nav-wrapper navbar-arrow">
 					
-						<ul class="nav navbar-nav" id="responsive-menu">
+					<ul class="nav navbar-nav" id="responsive-menu">
 						
-							<li>
+						<li>
+						
+							<a href="./">Home</a>
 							
-								<a href="../">Home</a>
-								
-							</li>
-							
-							<li>
-								<a href="../ideas.php">Ideas</a>
+						</li>
+						
+						<li>
+							<a href="ideas.php">Ideas</a>
 
-							</li>
-							
-							<li>
-								<a href="../ideators.php">Employers</a>
-							</li>
-							
-							<li>
-								<a href="../investors.php">Employees</a>
-							</li>
-							
-							<li>
-								<a href="../contact.php">Contact Us</a>
-							</li>
+						</li>
+						
+						<li>
+							<a href="investors.php">Ideator</a>
+						</li>
+						
+						<li>
+							<a href="investors.php">Investor</a>
+						</li>
+						
+						<li>
+							<a href="contact.php">Contact Us</a>
+						</li>
 
-						</ul>
+					</ul>
 				
 					</div>
 
@@ -244,7 +244,7 @@ $job_title = $row['title'];
 											
 										</div>
 										
-										<a target="_blank" href="../investor-detail.php?empid=<?php echo $rowb['member_no']; ?>" class="clearfix">
+										
 											
 											<div class="image clearfix">
 										    <?php 
@@ -264,14 +264,14 @@ $job_title = $row['title'];
 												<h4><?php echo $rowb['first_name'] ?> <?php echo $rowb['last_name'] ?></h4>
 												<p class="location"><i class="fa fa-map-marker"></i> <?php echo $rowb['state'] ?></p>
 												
-												
+												<a href="https://wa.me/919835087099<?php echo $row['phone'] ?>"><p class="whatsapp"><i class="fa fa-whatsapp"></i> <?php echo $rowb['phone'] ?></p></a>
 												
                                                 <h6 class="text-primary"><?php echo $rowb['title'] ?></h6>
 												<?php echo "$post_month"; ?> <?php echo "$post_date"; ?>, <?php echo "$post_year"; ?>
 												
 											</div>
 										
-										</a>
+										
 										
 									</div>
 								

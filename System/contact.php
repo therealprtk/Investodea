@@ -174,53 +174,7 @@ include 'constants/check-login.php';
 					
 					<div class="row">
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.7032095062546!2d85.11063202524826!3d25.61477663157973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed58251a7360f1%3A0x8eb62dfe040d7d33!2sCIMAGE%20Group%20of%20Colleges%20-%20Best%20colleges%20for%20BCA%20%7C%20BBA%20%7C%20B.Sc-IT%20%7C%20B.Com%20%7C%20PGDM%20in%20Patna%2C%20Bihar!5e0!3m2!1sen!2sin!4v1657964626099!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-						<!--<div class="col-sm-7 col-md-6 col-md-offset-1 mb-30">
-						<?php include 'constants/check_reply.php'; ?>
-						
-							<form class="contact-form-wrapper" data-toggle="validator" action="app/send-message.php" method="POST" autocomplete="off">
-							
-								<div class="row">
-								
-									<div class="col-sm-6">
-									
-										<div class="form-group">
-											<label for="inputName">Your Name <span class="font10 text-danger">(required)</span></label>
-											<input id="inputName" name="fullname" type="text" class="form-control" data-error="Your name is required" required>
-											<div class="help-block with-errors"></div>
-										</div>
-										
-									</div>
-									
-									<div class="col-sm-6">
-									
-										<div class="form-group">
-											<label for="inputEmail">Your Email <span class="font10 text-danger">(required)</span></label>
-											<input id="inputEmail" name="email" type="email" class="form-control" data-error="Your email is required and must be a valid email address" required>
-											<div class="help-block with-errors"></div>
-										</div>
-										
-									</div>
-
-									
-									<div class="col-sm-12">
-									
-										<div class="form-group">
-											<label for="inputMessage">Message <span class="font10 text-danger">(required)</span></label>
-											<textarea id="inputMessage" name="message" class="form-control" rows="8" data-minlength="50" data-error="Your message is required and must not less than 50 characters" required></textarea>
-											<div class="help-block with-errors"></div>
-										</div>
-
-									</div>
-									
-									<div class="col-sm-12 text-right">
-										<button type="submit" class="btn btn-primary mt-5">Send Message</button>
-									</div>
-									
-								</div>
-								
-							</form>
-							
-						</div> -->
+					
 						
 						<div class="col-sm-5 col-md-4">
 						
