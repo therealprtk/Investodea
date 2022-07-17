@@ -456,24 +456,7 @@ include 'constants/check-login.php';
 								
 							}
 							
-							if ($type == "Mini Investment") {
-							$sta = '<div class="job-label label label-success">
-									Mini Investment 
-									</div>';
-											  
-							}
-							if ($type == "Short Term Investment") {
-							$sta = '<div class="job-label label label-danger">
-									Short Term Investment
-									</div>';
-											  
-							}
-							if ($type == "Short Term Investment") {
-							$sta = '<div class="job-label label label-warning">
-									Long Term Investment
-									</div>';
-											  
-							}
+							
 							?>
 							<a class="recent-job-item clearfix" target="_blank" href="explore-job.php?jobid=<?php echo $row['job_id']; ?>">
 							<div class="GridLex-grid-middle">
@@ -500,7 +483,7 @@ include 'constants/check-login.php';
 							</div>
 							</div>
 							<div class="GridLex-col-2_xs-4_xss-12">
-							<?php echo "$sta"; ?>
+						
 							<span class="font12 block spacing1 font400 text-center">Due - <?php echo "$post_month"; ?> <?php echo "$post_date"; ?>, <?php echo "$post_year"; ?></span>
 							</div>
 							</div>
