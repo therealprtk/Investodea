@@ -30,10 +30,7 @@ try {
 	$jobstate = $row['state'];
 	$jobcategory = $row['category'];
 	$jobtype = $row['type'];
-	$experience = $row['experience'];
 	$jobdescription = $row['description'];
-	$jobrespo = $row['responsibility'];
-	$jobreq = $row['requirements'];
 	$closingdate = $row['closing_date'];
 	$opendate = $row['date_posted'];
 	$compid = $row['company'];
@@ -370,7 +367,7 @@ $jobexpired = false;
 								
 								}else{
 									
-								print '<button class="btn btn-primary disabled btn-hidden btn-lg collapsed"><i class="flaticon-line-icon-set-padlock"></i> Login to apply this job</button>';	
+								print '<button class="btn btn-primary disabled btn-hidden btn-lg collapsed"><i class="flaticon-line-icon-set-padlock"></i> Login to Invest</button>';	
 								}
 								
 								?>
