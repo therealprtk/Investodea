@@ -153,7 +153,7 @@ include 'constants/check-login.php';
 			
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title text-center">Create your account for free</h4>
+					<h4 class="modal-title text-center">Create your account</h4>
 				</div>
 				
 				<div class="modal-body">
@@ -237,7 +237,7 @@ include 'constants/check-login.php';
 						
 					          	<div class="col-sm-12 col-md-12">
 							    <div class="login-box-link-action">
-								<a data-toggle="modal" onclick = "reset_text()" href="#forgotPasswordModal">Forgot password?</a> 
+								
 							    </div>
 						      </div>	
 
