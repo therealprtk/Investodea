@@ -307,7 +307,7 @@ header("location:../");
 													
 													<div class="col-sm-6 col-md-4">
 													<label>Profession</label>
-														<input value="<?php echo "$mytitle"; ?>" name="title" required type="text" class="form-control mb-15" placeholder="Eg: Computer Science, IT...etc">
+														<input value="<?php echo "$mytitle"; ?>" name="title" required type="text" class="form-control mb-15" placeholder="Enter your profession">
 													</div>
 														
 												</div>
