@@ -39,7 +39,7 @@ include '../constants/db_config.php';
 	
 	print '<br>
 	 <div class="alert alert-success">
-     You have successfully applied this job.
+     You have successfully invested in this idea.
 	 </div>
      ';
 					  
@@ -54,7 +54,7 @@ include '../constants/db_config.php';
     {
 	 print '<br>
 	 <div class="alert alert-warning">
-     You have already applied this job before , you can not apply again.
+     You have already invested in this idea before , you can not invest again.
 	 </div>
      ';
 	}	

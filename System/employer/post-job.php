@@ -364,8 +364,8 @@ header("location:../");
 									<div class="col-sm-6 col-md-4">
 									
 										<div class="footer-about-us">
-											<h5 class="footer-title">About Nightingale Jobs</h5>
-											<p>Nightingale Jobs is a job portal, online job management system developed by Nathaniel Nkrumah for his project in february 2018.</p>
+											<h5 class="footer-title">About Investodea</h5>
+											<p>Investodea is a platform that acknowledge The Risk Takers, The Idea Makers, The Ones who determine their own fate. </p>
 										
 										</div>
 
@@ -374,13 +374,11 @@ header("location:../");
 									<div class="col-sm-6 col-md-5 mt-30-xs">
 										<h5 class="footer-title">Quick Links</h5>
 										<ul class="footer-menu clearfix">
-											<li><a href="../">Home</a></li>
-											<li><a href="../ideas.php">Ideas</a></li>
-											<li><a href="../ideators.php">Employers</a></li>
-											<li><a href="../investors.php">Employees</a></li>
-											<li><a href="../contact.php">Contact Us</a></li>
-											<li><a href="#">Go to top</a></li>
-
+											<li><a href="./">Home</a></li>
+											<li><a href="ideas.php">Ideas</a></li>
+											<li><a href="ideators.php">Ideators</a></li>
+											<li><a href="investors.php">Investors</a></li>
+											<li><a href="contact.php">Contact Us</a></li>
 										</ul>
 									
 									</div>
@@ -391,11 +389,11 @@ header("location:../");
 							
 							<div class="col-sm-12 col-md-3 mt-30-sm">
 							
-							<h5 class="footer-title">Nightingale Jobs Contact</h5>
+								<h5 class="footer-title">Investodea Contact</h5>
 								
-								<p>Address : Takoradi, School Junction PO.BOX AX40</p>
-								<p>Email : <a href="mailto:investodea@gmail.com">investodea@gmail.com</a></p>
-								<p>Phone : <a href="tel:+233546607474">+233 546 607 474</a></p>
+								<p>Address : Cimage Professional College, Patna</p>
+								<p>Email : <a href="mailto:investodea@gmail.com">Investodea@gmail.com</a></p>
+								<p>Phone : <a href="tel:+91 2233344445">+91 2233344445</a></p>
 								
 
 							</div>
@@ -415,15 +413,14 @@ header("location:../");
 						
 							<div class="col-sm-4 col-md-4">
 					
-							
-								<p class="copy-right">&#169; Copyright <?php echo date('Y'); ?> Nightingale Vision Software</p>
+								<p class="copy-right">&#169; Copyright <?php echo date('Y'); ?> Investodea</p>
 								
 							</div>
 							
 							<div class="col-sm-4 col-md-4">
 							
 								<ul class="bottom-footer-menu">
-									<li><a >Developed by Nathaniel Nkrumah</a></li>
+									<li><a >Developed by Dominators</a></li>
 								</ul>
 							
 							</div>
@@ -432,7 +429,7 @@ header("location:../");
 								<ul class="bottom-footer-menu for-social">
 									<li><a href="<?php echo "$tw"; ?>"><i class="ri ri-twitter" data-toggle="tooltip" data-placement="top" title="twitter"></i></a></li>
 									<li><a href="<?php echo "$fb"; ?>"><i class="ri ri-facebook" data-toggle="tooltip" data-placement="top" title="facebook"></i></a></li>
-									<li><a href="<?php echo "$ig"; ?>"><i class="ri ri-instagram" data-toggle="tooltip" data-placement="top" title="instagram"></i></a></li>
+									<li><a href="www.facebook.com"><a href="<?php echo "$ig"; ?>"><i class="ri ri-instagram" data-toggle="tooltip" data-placement="top" title="instagram"></i></a></a></li>
 								</ul>
 							</div>-->
 						

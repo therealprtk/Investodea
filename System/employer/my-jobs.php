@@ -276,8 +276,7 @@ $page = 1;
 											<div class="content-bottom">
 											<div class="sub-category">
 											<a target="_blank" href="view-applicants.php?jobid=<?php echo $row['job_id']; ?>">Applicants</a>
-											<a href="edit-job.php?jobid=<?php echo $row['job_id']; ?>">Edit Job</a>
-											<a onclick = "return confirm('Are you sure you want to delete this job ?')" href="app/drop-job.php?id=<?php echo $row['job_id']; ?>">Delete Job</a>
+											
 											</div>
 											</div>
 														

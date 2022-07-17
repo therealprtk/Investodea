@@ -41,7 +41,7 @@ require '../constants/uniques.php';
 	$stmt->bindParam(':token', $token);
     $stmt->execute();	
 
-	$message = "Hellow!! <b>$full_name</b>, <br>Click <a href='$actual_link'>HERE</a> to reset your <b>BwireJobs</b> password.";   
+	$message = "Hellow!! <b>$full_name</b>, <br>Click <a href='$actual_link'>HERE</a> to reset your password.";   
     require '../mail/PHPMailerAutoload.php';
 
     $mail = new PHPMailer;
@@ -55,7 +55,7 @@ require '../constants/uniques.php';
     $mail->SMTPSecure = 'tls';                            
     $mail->Port = 587;                                   
 
-    $mail->setFrom($smtp_user, 'bwirejobs@no-reply');
+    $mail->setFrom($smtp_user, 'investodea@gmail.com');
     $mail->addAddress($mymail , $full_name);              
    
     $mail->isHTML(true);                                 
