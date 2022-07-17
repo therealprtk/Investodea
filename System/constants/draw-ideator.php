@@ -26,7 +26,7 @@
 
 <div class="form-group"> 
 <label>Profession</label>
-<input class="form-control" placeholder="Enter your company name" name="type" required type="text"> 
+<input class="form-control" placeholder="Enter your Profession" name="type" required type="text"> 
 </div>
 												
 </div>
