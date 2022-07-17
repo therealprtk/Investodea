@@ -148,7 +148,7 @@ $jobexpired = false;
    {
 	   
 	var txt;
-    var r = confirm("Are you sure you want to apply this job , you can not UNDO");
+    var r = confirm("Are you sure you want to invest in this idea , you can not UNDO");
     if (r == true) {
 		document.getElementById("data").innerHTML = "Please wait...";
          var xmlhttp;
