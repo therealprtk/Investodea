@@ -138,7 +138,7 @@ header("location:../");
 										<div class="image">
 										<?php 
 										if ($logo == null) {
-										print '<center>Company Logo Here</center>';
+										print '<center>Avatar</center>';
 										}else{
 										echo '<center><img alt="image" title="'.$compname.'" width="180" height="100" src="data:image/jpeg;base64,'.base64_encode($logo).'"/></center>';	
 										}
@@ -151,7 +151,7 @@ header("location:../");
 									
 									<div class="admin-user-action text-center">
 									
-										<a href="post-job.php" class="btn btn-primary btn-sm btn-inverse">Post a Job</a>
+										<a href="post-job.php" class="btn btn-primary btn-sm btn-inverse">Create Ideas</a>
 										
 									</div>
 									
@@ -164,10 +164,10 @@ header("location:../");
 										</li>
 			
 										<li>
-											<a href="../company.php?ref=<?php echo "$myid"; ?>"><i class="fa fa-briefcase"></i> Company Overview</a>
+											<a href="../company.php?ref=<?php echo "$myid"; ?>"><i class="fa fa-briefcase"></i> Dashboard</a>
 										</li>
 										<li>
-											<a href="my-jobs.php"><i class="fa fa-bookmark"></i> Posted Jobs</a>
+											<a href="my-jobs.php"><i class="fa fa-bookmark"></i> Posted Ideas</a>
 										</li>
 										<li>
 											<a href="../logout.php"><i class="fa fa-sign-out"></i> Logout</a>
@@ -198,25 +198,18 @@ header("location:../");
 												<div class="col-sm-12 col-md-8">
 												
 													<div class="form-group">
-														<label>Idea Name</label>
-														<input name="company" placeholder="Enter idea name" type="text" class="form-control" value="<?php echo "$compname"; ?>" required>
+														<label>Name</label>
+														<input name="company" placeholder="Enter name" type="text" class="form-control" value="<?php echo "$compname"; ?>" required>
 													</div>
 													
 												</div>
 												<div class="clear"></div>
 												
-												<div class="col-sm-6 col-md-4">
 												
-													<div class="form-group">
-														<label>Established In</label>
-                                                    <input name="year" placeholder="Enter year eg: 2016, 2017, 2018" type="text" class="form-control" value="<?php echo "$esta"; ?>" required>
-													</div>
-												</div>
-
 												<div class="col-sm-6 col-md-4">
 													<div class="form-group">
-														<label>BY</label>
-                                                    <input class="form-control" placeholder="Owner Name" name="type" required type="text" value="<?php echo "$mytitle"; ?>" required> 
+														<label>Profession</label>
+                                                    <input class="form-control" placeholder="Profession" name="type" required type="text" value="<?php echo "$mytitle"; ?>" required> 
 													</div>
 													
 												</div>
@@ -291,7 +284,7 @@ header("location:../");
 												<div class="col-sm-12 col-md-12">
 												
 													<div class="form-group bootstrap3-wysihtml5-wrapper">
-														<label>About Idea</label>
+														<label>Bio</label>
 														<textarea name="background"  placeholder="Enter company background ..." style="height: 200px; width:600px;"><?php echo "$desc"; ?></textarea>
 													</div>
 													
@@ -317,7 +310,7 @@ header("location:../");
 										<div class="col-sm-12 col-md-12">
 												
 										<div class="form-group bootstrap3-wysihtml5-wrapper">
-										<label>Company Logo</label>
+										<label>Profile Picture</label>
 										<input accept="image/*" type="file" name="image"  required >
 										</div>
 													
