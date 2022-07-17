@@ -392,10 +392,6 @@ $title = "Ideas";
 																<span>state:</span>
 																<?php echo $row['state']; ?>
 															</li>
-															<li>
-																<span>City:</span>
-																<?php echo $row['city']; ?>
-															</li>
 															
 															<li>
 																<span>Deadline: </span>

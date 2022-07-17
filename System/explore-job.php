@@ -26,11 +26,13 @@ try {
     foreach($result as $row)
     {
 	$jobtitle = $row['title'];
-	$jobcity = $row['city'];
+	
 	$jobstate = $row['state'];
 	$jobcategory = $row['category'];
 	$jobtype = $row['type'];
+	
 	$jobdescription = $row['description'];
+	
 	$closingdate = $row['closing_date'];
 	$opendate = $row['date_posted'];
 	$compid = $row['company'];
@@ -424,7 +426,7 @@ $jobexpired = false;
 	                        }
 							
 							?>
-																											<a href="explore-job.php?jobid=<?php echo $row['job_id']; ?>" class="recent-job-item clearfix">
+							<a href="explore-job.php?jobid=<?php echo $row['job_id']; ?>" class="recent-job-item clearfix">
 														<div class="GridLex-grid-middle">
 															<div class="GridLex-col-6_sm-12_xs-12">
 																<div class="job-position">
