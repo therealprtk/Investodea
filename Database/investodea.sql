@@ -179,13 +179,12 @@ CREATE TABLE `tbl_experience` (
 CREATE TABLE `ideas` (
   `job_id` varchar(255) NOT NULL,
   `title` varchar(255) NOT NULL,
-  `city` varchar(255) NOT NULL,
+ 
   `state` varchar(255) NOT NULL,
   `category` varchar(255) NOT NULL,
   `type` varchar(255) NOT NULL,
   `description` longtext NOT NULL,
-  `responsibility` longtext NOT NULL,
-  `requirements` longtext NOT NULL,
+ 
   `company` varchar(255) NOT NULL,
   `date_posted` varchar(255) NOT NULL,
   `closing_date` varchar(255) NOT NULL,
@@ -196,8 +195,8 @@ CREATE TABLE `ideas` (
 -- Dumping data for table `ideas`
 --
 
-INSERT INTO `ideas` (`job_id`, `title`, `city`, `state`, `category`, `type`, `description`, `responsibility`, `requirements`, `company`, `date_posted`, `closing_date`, `enc_id`) VALUES
-('5609558107', 'Technical Engineer', 'Takoradi', 'Ghana', 'IT and Telecoms', 'Long Term Investment', 'This is a complete system that has both android version and the desktop version. It also manages sales and can be used manage attendance as well.<br>', 'This is a complete system that has both android version and the desktop version. It also manages sales and can be used manage attendance as well.<br>', 'This is a complete system that has both android version and the desktop version. It also manages sales and can be used manage attendance as well.<br>', 'CM858235891', 'August 06, 2021', '01/09/2021', 11);
+INSERT INTO `ideas` (`job_id`, `title`, `state`, `category`, `type`, `description`,`company`, `date_posted`, `closing_date`, `enc_id`) VALUES
+('5609558107', 'Technical Engineer', 'Ghana', 'IT and Telecoms', 'Long Term Investment', 'This is a complete system that has both android version and the desktop version. It also manages sales and can be used manage attendance as well.<br>', 'CM858235891', 'August 06, 2021', '01/09/2021', 11);
 
 -- --------------------------------------------------------
 
