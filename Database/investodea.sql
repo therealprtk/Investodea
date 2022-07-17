@@ -256,12 +256,6 @@ ALTER TABLE `states`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `tbl_experience`
---
-ALTER TABLE `tbl_experience`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indexes for table `ideas`
 --
 ALTER TABLE `ideas`
@@ -308,12 +302,6 @@ ALTER TABLE `categories`
 --
 ALTER TABLE `states`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=246;
-
---
--- AUTO_INCREMENT for table `tbl_experience`
---
-ALTER TABLE `tbl_experience`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `ideas`
