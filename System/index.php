@@ -437,7 +437,7 @@ include 'constants/check-login.php';
   
 
                             foreach($result as $row) {
-							$jobcity = $row['city'];
+							
 							$jobstate = $row['state'];
 							$type = $row['type'];
 							$title = $row['title'];
@@ -479,7 +479,7 @@ include 'constants/check-login.php';
 							</div>
 							<div class="GridLex-col-5_xs-8_xss-12 mt-10-xss">
 							<div class="job-location">
-							<i class="fa fa-map-marker text-primary"></i> <?php echo "$jobstate" ?></strong> - <?php echo "$jobcity" ?>
+							<i class="fa fa-map-marker text-primary"></i> <?php echo "$jobstate" ?></strong> 
 							</div>
 							</div>
 							<div class="GridLex-col-2_xs-4_xss-12">
