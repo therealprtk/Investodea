@@ -230,7 +230,7 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`first_name`, `last_name`, `gender`, `bdate`, `bmonth`, `byear`, `email`, `title`, `state`, `phone`, `about`, `avatar`, `last_login`, `role`, `website`, `login`, `member_no`) 
+INSERT INTO `users` (`first_name`, `last_name`, `gender`, `bdate`, `bmonth`, `byear`, `email`, `title`, `state`, `phone`, `about`, `avatar`, `last_login`, `role`, `website`, `login`, `member_no`) ;
 --
 -- Indexes for dumped tables
 --
