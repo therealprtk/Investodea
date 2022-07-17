@@ -327,7 +327,7 @@ $jobexpired = false;
 					
 								<div class="job-detail-company-overview clearfix">
 								
-									<h3>About</h3>
+									<h3>Bio</h3>
 									<div class="image">
 										<?php 
 										if ($complogo == null) {
@@ -344,7 +344,7 @@ $jobexpired = false;
 								
 								<div class="job-detail-content mt-30 clearfix">
 								
-									<h3>Job Description</h3>
+									<h3>About</h3>
 
 									<p><?php echo "$jobdescription"; ?></p>
 
