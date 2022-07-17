@@ -40,9 +40,8 @@ $myemail = $_POST['email'];
 	$_SESSION['comptype'] = $type;
     $_SESSION['mystate'] = $state;
     $_SESSION['mydesc'] = $about;
-
 	$_SESSION['website'] = $web;
-	$_SESSION['people'] = $people;
+	
 	header("location:../?r=9837");	
 	}else{
 	header("location:../?r=0927");
