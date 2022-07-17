@@ -198,7 +198,7 @@ $job_title = $row['title'];
 							<div class="GridLex-grid-noGutter-equalHeight">
 							<?php
 							include '../constants/db_config.php';
-							$stmt = $conn->prepare("SELECT * FROM tbl_job_applications WHERE idea_id = :jobid ORDER BY id LIMIT $page1,16");
+							$stmt = $conn->prepare("SELECT * FROM idea_applications WHERE idea_id = :jobid ORDER BY id LIMIT $page1,16");
 							$stmt->bindParam(':jobid', $idea_id);
                             $stmt->execute();
                             $result = $stmt->fetchAll();
@@ -303,7 +303,7 @@ $job_title = $row['title'];
 						            <ul class="pager-list">
 								<?php
 								$total_records = 0;
-								$stmt = $conn->prepare("SELECT * FROM tbl_job_applications WHERE idea_id = :jobid ORDER BY id");
+								$stmt = $conn->prepare("SELECT * FROM idea_applications WHERE idea_id = :jobid ORDER BY id");
 								$stmt->bindParam(':jobid', $idea_id);
                                 $stmt->execute();
                                 $result = $stmt->fetchAll();

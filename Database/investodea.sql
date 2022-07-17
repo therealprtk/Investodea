@@ -1,10 +1,29 @@
+-- phpMyAdmin SQL Dump
+-- version 4.8.4
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Aug 06, 2021 at 03:04 PM
+-- Server version: 10.1.37-MariaDB
+-- PHP Version: 7.0.33
+
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
--- Database: `investodea`
+
+--
+--
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+--
+--
+-- --------------------------------------------------------
+-- Database: `investodea`;
 --
 
 -- --------------------------------------------------------
@@ -166,10 +185,10 @@ INSERT INTO `ideas` (`idea_id`, `title`, `state`, `category`, `type`, `descripti
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_job_applications`
+-- Table structure for table `idea_applications`
 --
 
-CREATE TABLE `tbl_job_applications` (
+CREATE TABLE `idea_applications` (
   `id` int(255) NOT NULL,
   `member_no` varchar(255) NOT NULL,
   `idea_id` varchar(255) NOT NULL,
@@ -247,9 +266,9 @@ ALTER TABLE `ideas`
   ADD UNIQUE KEY `idea_id` (`idea_id`);
 
 --
--- Indexes for table `tbl_job_applications`
+-- Indexes for table `idea_applications`
 --
-ALTER TABLE `tbl_job_applications`
+ALTER TABLE `idea_applications`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -294,9 +313,9 @@ ALTER TABLE `ideas`
   MODIFY `enc_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- AUTO_INCREMENT for table `tbl_job_applications`
+-- AUTO_INCREMENT for table `idea_applications`
 --
-ALTER TABLE `tbl_job_applications`
+ALTER TABLE `idea_applications`
   MODIFY `id` int(255) NOT NULL AUTO_INCREMENT;
 
 --
