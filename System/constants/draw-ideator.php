@@ -25,7 +25,7 @@
 <div class="col-sm-12 col-md-12">
 
 <div class="form-group"> 
-<label>Company</label>
+<label>Profession</label>
 <input class="form-control" placeholder="Enter your company name" name="type" required type="text"> 
 </div>
 												
