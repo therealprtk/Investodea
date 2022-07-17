@@ -6,14 +6,11 @@ require '../../constants/uniques.php';
 $postdate = date('F d, Y');
 $job_id = ''.get_rand_numbers(10).'';
 $title  = ucwords($_POST['title']);
-$city  = ucwords($_POST['city']);
+
 $state = $_POST['state'];
 $category = $_POST['category'];
 $type = $_POST['jobtype'];
-$exp = $_POST['experience'];
 $desc = ucfirst($_POST['description']);
-$rec = ucfirst($_POST['requirements']);
-$res = ucfirst($_POST['responsiblities']);
 $deadline = $_POST['deadline'];
 
 try {
@@ -21,18 +18,14 @@ $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 	
-$stmt = $conn->prepare("INSERT INTO ideas (job_id, title, city, state, category, type, experience, description, responsibility, requirements, company, date_posted, closing_date)
- VALUES (:jobid, :title, :city, :state, :category, :type, :experience, :description, :responsibility, :requirements, :company, :dateposted, :closingdate)");
+$stmt = $conn->prepare("INSERT INTO ideas (job_id, title, state, category, type, description, company, date_posted, closing_date)
+ VALUES (:jobid, :title, :state, :category, :type, :description, :company, :dateposted, :closingdate)");
 $stmt->bindParam(':jobid', $job_id);
 $stmt->bindParam(':title', $title);
-$stmt->bindParam(':city', $city);
 $stmt->bindParam(':state', $state);
 $stmt->bindParam(':category', $category);
 $stmt->bindParam(':type', $type);
-$stmt->bindParam(':experience', $exp);
 $stmt->bindParam(':description', $desc);
-$stmt->bindParam(':responsibility', $res);
-$stmt->bindParam(':requirements', $rec);
 $stmt->bindParam(':company', $myid);
 $stmt->bindParam(':dateposted', $postdate);
 $stmt->bindParam(':closingdate', $deadline);
