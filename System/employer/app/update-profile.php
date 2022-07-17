@@ -7,14 +7,11 @@ $esta = $_POST['year'];
 $type = ucwords($_POST['type']);
 $people = $_POST['people'];
 $web = $_POST['web'];
-$city = ucwords($_POST['city']);
-$street = ucwords($_POST['street']);
-$zip = ucwords($_POST['zip']);
+
 $phone = $_POST['phone'];
 $state = $_POST['state'];
 $about = $_POST['background'];
-$service = $_POST['services'];
-$expertise = $_POST['expertise'];
+
 $myemail = $_POST['email'];
 
     try {
@@ -33,15 +30,9 @@ $myemail = $_POST['email'];
     $stmt->bindParam(':compname', $companame);
     $stmt->bindParam(':esta', $esta);
 	$stmt->bindParam(':type', $type);
-    $stmt->bindParam(':city', $city);
-	$stmt->bindParam(':street', $street);
-    $stmt->bindParam(':zip', $zip);
 	$stmt->bindParam(':state', $state);
     $stmt->bindParam(':phone', $phone);
 	$stmt->bindParam(':about', $about);
-    $stmt->bindParam(':service', $service);
-	$stmt->bindParam(':expertise', $expertise);
-    $stmt->bindParam(':people', $people);
 	$stmt->bindParam(':website', $web);
     $stmt->execute();
 	
@@ -50,13 +41,9 @@ $myemail = $_POST['email'];
     $_SESSION['myemail'] = $myemail;
     $_SESSION['myphone'] = $phone;
 	$_SESSION['comptype'] = $type;
-	$_SESSION['mycity'] = $city;
-	$_SESSION['mystreet'] = $street;
-	$_SESSION['myzip'] = $zip;
     $_SESSION['mystate'] = $state;
     $_SESSION['mydesc'] = $about;
-	$_SESSION['myserv'] = $service;
-	$_SESSION['myexp'] = $expertise;
+
 	$_SESSION['website'] = $web;
 	$_SESSION['people'] = $people;
 	header("location:../?r=9837");	

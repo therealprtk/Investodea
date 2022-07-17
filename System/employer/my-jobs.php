@@ -220,7 +220,6 @@ $page = 1;
    
                                         foreach($result as $row)
                                         {
-										   $jobcity = $row['city'];
 										   $jobstate = $row['state'];
 										   $type = $row['type'];
 										   $title = $row['title'];
@@ -268,7 +267,7 @@ $page = 1;
 														
 											<div class="content">
 											<h4 class="heading"><?php echo "$title"; ?></h4>
-											<p class="location"><i class="fa fa-map-marker text-primary"></i> <strong class="text-primary"><?php echo "$jobstate" ?></strong> - <?php echo "$jobcity" ?></p>
+											<p class="location"><i class="fa fa-map-marker text-primary"></i> <strong class="text-primary"><?php echo "$jobstate" ?></strong> </p>
 											<p class="date text-muted font12 font-italic">Deadline - <?php echo "$deadline"; ?></p>
 											</div>
 															
