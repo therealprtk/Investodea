@@ -155,24 +155,6 @@ INSERT INTO `states` (`id`, `state_name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_experience`
---
-
-CREATE TABLE `tbl_experience` (
-  `id` int(255) NOT NULL,
-  `member_no` varchar(255) NOT NULL,
-  `title` varchar(255) NOT NULL,
-  `institution` varchar(255) NOT NULL,
-  `supervisor` varchar(255) NOT NULL,
-  `supervisor_phone` varchar(255) NOT NULL,
-  `start_date` varchar(255) NOT NULL,
-  `end_date` varchar(255) NOT NULL,
-  `duties` longtext NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `ideas`
 --
 
