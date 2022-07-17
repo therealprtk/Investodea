@@ -20,7 +20,7 @@ header("location:../");
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Nightingale Jobs - Post Job</title>
+	<title>Investodea - Post Job</title>
 	<meta name="description" content="Online Job Management / Job Portal" />
 	<meta name="keywords" content="job, work, resume, applicants, application, employee, employer, hire, hiring, human resource management, hr, online job management, company, worker, career, recruiting, recruitment" />
 	<meta name="author" content="BwireSoft">
@@ -147,12 +147,9 @@ header("location:../");
 									<p class="location"><i class="fa fa-map-marker"></i>  <?php echo "$state"; ?> <span class="block"> <i class="fa fa-phone"></i> <?php echo "$myphone"; ?></span></p>
 									
 									<ul class="meta-list clearfix">
+									
 										<li>
-											<h4 class="heading">Established In:</h4>
-											<?php echo "$esta"; ?>
-										</li>
-										<li>
-											<h4 class="heading">BY:</h4>
+											<h4 class="heading">Profession:</h4>
 											<?php echo "$mytitle"; ?>
 										</li>
 										
@@ -182,7 +179,7 @@ header("location:../");
 									<div class="company-detail-company-overview  mt-0 clearfix">
 										
 										<div class="section-title-02">
-											<h3 class="text-left"><b>Post a Job</b></h3>
+											<h3 class="text-left"><b>Post Idea</b></h3>
 										</div>
 
 										<form class="post-form-wrapper" action="app/post-job.php" method="POST" autocomplete="off">
@@ -194,7 +191,7 @@ header("location:../");
 												
 													<div class="form-group">
 														<label>Idea Title</label>
-														<input name="title" required type="text" class="form-control" placeholder="Enter job title">
+														<input name="title" required type="text" class="form-control" placeholder="Enter idea title">
 													</div>
 													
 												</div>
