@@ -123,7 +123,7 @@ $jobexpired = false;
     <meta property="og:image:alt" content="Bwire Jobs" />
     <meta property="og:description" content="Online Job Management / Job Portal" />
 
-	<link rel="shortcut icon" href="../images/ico/logoinv.png">
+	<link rel="shortcut icon" href="images/ico/logoinv.png">
 
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" media="screen">	
 	<link href="css/animate.css" rel="stylesheet">
@@ -362,7 +362,7 @@ $jobexpired = false;
 								if ($myrole == "employee") {
                                 print '<button';?> onclick="update(this.value)" <?php print ' value="'.$jobid.'" class="btn btn-primary btn-hidden btn-lg collapsed"><i class="flaticon-line-icon-set-pencil"></i> Invest</button>';
 								}else{
-								print '<button class="btn btn-primary disabled btn-hidden btn-lg collapsed"><i class="flaticon-line-icon-set-padlock"></i> Login as employee to apply</button>';
+								print '<button class="btn btn-primary disabled btn-hidden btn-lg collapsed"><i class="flaticon-line-icon-set-padlock"></i> Login as investor to invest</button>';
 								}	
 								}
 
