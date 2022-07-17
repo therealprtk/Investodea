@@ -196,8 +196,8 @@ CREATE TABLE `ideas` (
 -- Dumping data for table `ideas`
 --
 
-INSERT INTO `ideas` (`job_id`, `title`, `city`, `state`, `category`, `type`, `experience`, `description`, `responsibility`, `requirements`, `company`, `date_posted`, `closing_date`, `enc_id`) VALUES
-('5609558107', 'Technical Engineer', 'Takoradi', 'Ghana', 'IT and Telecoms', 'Long Term Investment', '2 Years', 'This is a complete system that has both android version and the desktop version. It also manages sales and can be used manage attendance as well.<br>', 'This is a complete system that has both android version and the desktop version. It also manages sales and can be used manage attendance as well.<br>', 'This is a complete system that has both android version and the desktop version. It also manages sales and can be used manage attendance as well.<br>', 'CM858235891', 'August 06, 2021', '01/09/2021', 11);
+INSERT INTO `ideas` (`job_id`, `title`, `city`, `state`, `category`, `type`, `description`, `responsibility`, `requirements`, `company`, `date_posted`, `closing_date`, `enc_id`) VALUES
+('5609558107', 'Technical Engineer', 'Takoradi', 'Ghana', 'IT and Telecoms', 'Long Term Investment', 'This is a complete system that has both android version and the desktop version. It also manages sales and can be used manage attendance as well.<br>', 'This is a complete system that has both android version and the desktop version. It also manages sales and can be used manage attendance as well.<br>', 'This is a complete system that has both android version and the desktop version. It also manages sales and can be used manage attendance as well.<br>', 'CM858235891', 'August 06, 2021', '01/09/2021', 11);
 
 -- --------------------------------------------------------
 
