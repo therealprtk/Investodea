@@ -388,7 +388,7 @@ header("location:../");
 												
 													<div class="form-group bootstrap3-wysihtml5-wrapper">
 														<label>About me</label>
-														<textarea name="about"  placeholder="Enter your short description ..." style="height: 200px; width: 600px";><?php echo "$mydesc"; ?></textarea>
+														<textarea name="about"  placeholder="Enter your short description ..." data-minlength="50" data-error="Your message is required and must not less than 50 characters" style="height: 200px; width: 600px";><?php echo "$mydesc"; ?></textarea>
 													</div>
 													
 												</div>

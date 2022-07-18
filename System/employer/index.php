@@ -285,7 +285,7 @@ header("location:../");
 												
 													<div class="form-group bootstrap3-wysihtml5-wrapper">
 														<label>Bio</label>
-														<textarea name="background"  placeholder="Enter company background ..." style="height: 200px; width:600px;"><?php echo "$desc"; ?></textarea>
+														<textarea name="background"  placeholder="Enter about you here ..." data-minlength="50" style="height: 200px; width:600px;"><?php echo "$desc"; ?></textarea>
 													</div>
 													
 												</div>
