@@ -264,7 +264,9 @@ $job_title = $row['title'];
 												<h4><?php echo $rowb['first_name'] ?> <?php echo $rowb['last_name'] ?></h4>
 												<p class="location"><i class="fa fa-map-marker"></i> <?php echo $rowb['state'] ?></p>
 												<a href="https://wa.me/91<?php echo $rowb['phone'] ?>"><p class="whatsapp"><i class="fa fa-whatsapp"></i> Chat Now</p></a>
-											
+
+												<a href="tel:+91<?php echo $rowb['phone'] ?>"><p class="phone"><i class="fa fa-phone"></i> Call Now</p></a>
+
                                                 <h6 class="text-primary"><?php echo $rowb['title'] ?></h6>
 												<?php echo "$post_month"; ?> <?php echo "$post_date"; ?>, <?php echo "$post_year"; ?>
 												
